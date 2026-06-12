@@ -6,8 +6,7 @@
   jre,
 
   url,
-  # TODO : replace with auto
-  hash,
+  sha1,
   features ? { },
   staticVars ? {
     game_directory = ".";
@@ -19,7 +18,7 @@ let
   utils = callPackage ./utils.nix { };
 
   versionInfoFile = fetchurl {
-    inherit url hash;
+    inherit url sha1;
   };
   versionInfo = builtins.fromJSON (builtins.readFile versionInfoFile);
 
