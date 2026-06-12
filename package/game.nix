@@ -12,6 +12,12 @@
     game_directory = ".";
     auth_player_name = "Player";
     user_properties = "{}";
+    auth_uuid = "00000000-0000-0000-0000-000000000000";
+    auth_access_token = "0";
+    clientid = "0";
+    auth_xuid = "0";
+    user_type = "legacy";
+    version_type = "release";
   },
 }:
 let
